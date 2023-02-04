@@ -1,27 +1,42 @@
 @import "https://unpkg.com/open-props";
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     /* background-image: var(--gradient-9); */
 
 }
 
-.navbar-color {
-    /* background-color: rgba(255, 255, 255, 0.186); */
-}
+
 
 .logo {
-    width: 10rem;
+    width: 20rem;
     padding: 1rem;
-    margin: auto !important;
-    ;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%)
 }
 
 .logo:hover {
     cursor: pointer;
 }
+
+.navbar-color {
+    background-color: rgba(141, 140, 140, 0.149);
+}
+
+.nav-link:hover{
+text-decoration: underline !important;
+color: black !important;
+}
+.nav-link{
+    color:#374151 !important;
+    transition: 2s !important;
+}
+
 
 .about-p {
     font-family: 'IBM Plex Sans Hebrew', sans-serif;
@@ -127,7 +142,8 @@ body {
 .nav-item:hover {
     cursor: pointer;
 }
-.footer{
+
+.footer {
     background-color: #374151;
     display: flex;
     flex-direction: row;
@@ -135,17 +151,20 @@ body {
     justify-content: center;
     color: white;
 }
-#footer{
+
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;  
+    height: 2.5rem;
 }
-.wrapper{
+
+.wrapper {
     min-height: 100vh;
     position: relative;
 }
-.content-wrapper{
+
+.content-wrapper {
     padding-bottom: 2.5rem
 }
 
