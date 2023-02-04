@@ -13,7 +13,7 @@ body {
 
 
 .logo {
-    width: 20rem;
+    width: 30rem;
     padding: 1rem;
    position: relative;
    left: 50%;
@@ -168,4 +168,10 @@ color: black !important;
     padding-bottom: 2.5rem
 }
 
-/* animations */
+
+
+@media screen and (max-width: 700px) {
+    .logo{
+        width: 24rem;
+    }
+  }
