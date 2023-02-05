@@ -11,6 +11,7 @@ let footerGallery = document.querySelector('.footer-gallery')
 logo.addEventListener('click', () => {
     carouselDiv.classList.remove('hide')
     aboutSection.classList.remove('hide')
+    aboutUs.classList.add('hide')
     cardsDiv.classList.add('hide')
 })
 
