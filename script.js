@@ -81,16 +81,3 @@ draggable.addEventListener('mouseup', function() {
 })
 
 
-const whatsappBtn=document.getElementById("draggable")
-// var number = "{{+972506500855}}"
-// var message = "{{ היי שלום }}"
-
-// function getLinkWhastapp(number, message) {
-//   var url = 'https://api.whatsapp.com/send?phone=' 
-//   + number 
-//   + '&text=' 
-//   + encodeURIComponent(message)
-//   console.log("yes")
-//   return url
-// }
-whatsappBtn.addEventListener("click",()=>console.log("click"))
