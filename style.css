@@ -108,6 +108,7 @@ body {
     background-color: #212121;
     color: white;
     text-align: center;
+    font-size: 2rem;
     font-family: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
@@ -126,12 +127,50 @@ body {
 }
 
 
+#draggable {
+    /* background: rgb(37, 232, 37); */
+    /* display:flex;
+    align-items: center;
+    justify-content:center; */
+    position: fixed;
+    left: 5vh;
+    top: 92vh;
+    width: 5rem;
+    height:5rem;
+    font-size:2rem;
+    z-index: 1000;
+  }
+  #draggable:hover{
+    cursor: pointer;
+  }
+  .no-select {
+    user-select: none;
+  }
+  
+.whatsapp{
+    font-size: 3rem;
+    color: white;
+    background-color: #25d366;
+    mix-blend-mode: multiply;
+}
 
+/* .whatsapp{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(37, 232, 37);
+    z-index: 1000;
+    position: fixed;
+    left: 90%;
+    top:80vh;
+    transform: translate(-50%,-50%);
+}
 
-
-
-
-
+.whatsapp p{
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+} */
 
 
 
