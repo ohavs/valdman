@@ -7,7 +7,8 @@
 
 body {
     /* background-image: var(--gradient-9); */
-
+    margin-top: 10rem;
+    font-size: 62.5%;
 }
 
 
@@ -15,9 +16,10 @@ body {
 .logo {
     width: 30rem;
     padding: 1rem;
-   position: relative;
-   left: 50%;
-   transform: translate(-50%)
+    position: relative;
+    left: 50%;
+    border: 1px solid black;
+    transform: translate(-50%)
 }
 
 .logo:hover {
@@ -25,15 +27,17 @@ body {
 }
 
 .navbar-color {
-    background-color: rgba(141, 140, 140, 0.149);
+    background-color: white;
+    display: block;
 }
 
-.nav-link:hover{
-text-decoration: underline !important;
-color: black !important;
+.nav-link:hover {
+    text-decoration: underline !important;
+    color: black !important;
 }
-.nav-link{
-    color:#374151 !important;
+
+.nav-link {
+    color: #374151 !important;
     transition: 2s !important;
 }
 
@@ -42,11 +46,28 @@ color: black !important;
     font-family: 'IBM Plex Sans Hebrew', sans-serif;
     text-align: center;
     font-size: 1.5rem;
-
 }
 
 .about {
-    color: #374151;
+    color: #212121;
+}
+
+.aboutus-p {
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.aboutus span {
+    font-size: 2rem;
+}
+
+.aboutus {
+    color: #212121;
+    width: 60vw;
+    margin: auto;
 }
 
 .font {
@@ -59,80 +80,59 @@ color: black !important;
 }
 
 .carousel-div {
-    margin: auto;
-    margin-top: 2rem;
+    /* margin: auto;
+    margin-top: 2rem; */
 }
 
 /* cards  */
-.flip-card {
-    background-color: transparent;
-    width: 190px;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
+
+
+.cards {
+    margin-top: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
 }
 
-.title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
-    position: absolute;
+.card {
+    height: 24rem;
+    width: 18rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid #374151;
-    border-radius: 1rem;
 }
 
-.flip-card-front {
-    background: var(--gradient-15);
-    color: #374151;
-}
-
-.flip-card-back {
-    background: var(--gradient-15);
-    color: #374151;
-    transform: rotateY(180deg);
+.card-text {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
 .card-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    scale: 0.9;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.cards-div {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+.card:hover>.card-img {
+    scale: 1;
+
 }
+
+
+
+
+
+
+
+
+
 
 
 .hide {
@@ -143,8 +143,11 @@ color: black !important;
     cursor: pointer;
 }
 
+
+
+
 .footer {
-    background-color: #374151;
+    background-color: #212121;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -171,7 +174,24 @@ color: black !important;
 
 
 @media screen and (max-width: 700px) {
-    .logo{
-        width: 18.3rem;
+    .logo {
+        width: 15rem;
     }
-  }
+    .aboutus p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 15rem;
+    }
+    .aboutus {
+        width: 80vw;
+        font-size: 1.2rem;
+    }
+
+    .aboutus p {
+        font-size: 1.2rem;
+    }
+}
