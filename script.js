@@ -13,6 +13,7 @@ let chat = document.querySelector('.chat')
 let whatsappBtn = document.querySelector('.whatsapp')
 let collapse = document.querySelector('.navbar-toggler')
 let principles = document.querySelector('.principles')
+let social = document.querySelector('.social')
 
 
 //  logo click 
@@ -24,6 +25,7 @@ logo.addEventListener('click', () => {
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
   principles.classList.remove('hide')
+  social.classList.add('hide')
 })
 
 
@@ -37,6 +39,7 @@ galleryBtn.addEventListener('click', () => {
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
   principles.classList.add('hide')
+  social.classList.add('hide')
   closeNav()
 })
 
@@ -49,6 +52,7 @@ aboutBtn.addEventListener('click', () => {
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
   principles.classList.add('hide')
+  social.classList.add('hide')
   closeNav()
 })
 
@@ -61,6 +65,7 @@ contactBtn.addEventListener('click', () => {
   chat.classList.remove('hide')
   whatsappBtn.classList.add('hide')
   principles.classList.add('hide')
+  social.classList.remove('hide')
   closeNav()
 })
 // /////////
@@ -73,6 +78,7 @@ footerGallery.addEventListener('click', () => {
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
   principles.classList.add('hide')
+  social.classList.add('hide')
 })
 
 
@@ -84,6 +90,7 @@ footerAbout.addEventListener('click', () => {
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
   principles.classList.add('hide')
+  social.classList.add('hide')
 })
 
 
@@ -95,6 +102,7 @@ footerContact.addEventListener('click', () => {
   chat.classList.remove('hide')
   whatsappBtn.classList.add('hide')
   principles.classList.add('hide')
+  social.classList.remove('hide')
 })
 
 

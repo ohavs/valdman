@@ -11,11 +11,11 @@ body {
     font-size: 62.5%;
 }
 
-:root{
+:root {
     --main-gray: #212121;
-    --green:#2cb742;
-    --purple:#6c63ff;
-    --font:'IBM Plex Sans Hebrew', sans-serif;
+    --green: #2cb742;
+    --purple: #6c63ff;
+    --font: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
 .logo {
@@ -24,13 +24,36 @@ body {
     position: relative;
     left: 50%;
     /* border: 1px solid black; */
-    
     transform: translate(-50%)
 }
 
 .logo:hover {
     cursor: pointer;
 }
+
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.rec {
+    position: relative;
+    height: 2.1rem;
+    top: 1.8rem;
+    right: 2.9rem;
+}
+
+/* .rectangles{
+    position: absolute;
+    top: 1.06rem;
+    left: 24rem;
+    width: 30rem;
+    padding: 1rem;
+    scale: 0.78;
+} */
 
 .navbar-color {
     background-color: white;
@@ -59,7 +82,7 @@ body {
 }
 
 .aboutus-p {
-    font-family:var(--font);
+    font-family: var(--font);
     text-align: center;
     font-size: 1.5rem;
     line-height: 2;
@@ -71,7 +94,7 @@ body {
 }
 
 .aboutus {
-    color:var(--main-gray);
+    color: var(--main-gray);
     width: 60vw;
     margin: auto;
 }
@@ -138,17 +161,19 @@ body {
     left: 85%;
     top: 80vh;
     width: 5rem;
-    height:5rem;
-    font-size:2rem;
+    height: 5rem;
+    font-size: 2rem;
     z-index: 1000;
-  }
-  #draggable:hover{
+}
+
+#draggable:hover {
     cursor: pointer;
-  }
-  .no-select {
+}
+
+.no-select {
     user-select: none;
-  }
-  
+}
+
 /* .whatsapp{
     font-size: 3rem; 
     color: white; 
@@ -156,18 +181,37 @@ body {
      mix-blend-mode: multiply; 
 } */
 
-.whatsapp{
+.whatsapp {
     width: 3.5rem;
     height: 3.5rem;
     z-index: 1000;
     position: fixed;
     left: 92%;
-    top:84vh;
+    top: 84vh;
     scale: 0.6;
 }
 
+.social{
 
-
+}
+.social  h1{
+    text-align: center;
+    font-family: var(--font);
+    color: var(--main-gray);
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+     font-size: 6rem; 
+     margin: 4rem 0;
+    cursor: pointer;
+}
+a:visited{
+    color: var(--main-gray);
+}
 .hide {
     display: none;
 }
@@ -177,19 +221,24 @@ body {
 }
 
 
-.illustration{
+.illustration {
     width: 15rem;
 }
-.discount{
- 
+
+.discount {
+    position: relative;
+    left: 0.4rem;
+    scale: 0.9;
 }
-.prices{
+
+.prices {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.illustration:hover{
+
+.illustration:hover {
     -webkit-animation: bounce infinite 1s;
     animation: bounce infinite 1s;
     -webkit-transform-origin: center bottom;
@@ -197,7 +246,7 @@ body {
     cursor: pointer;
 }
 
-.illustrations{
+.illustrations {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -206,7 +255,7 @@ body {
     margin: 8rem 0;
 }
 
-.principle-text{
+.principle-text {
     font-family: var(--font);
     color: var(--main-gray);
     font-size: 1.3rem;
@@ -250,9 +299,9 @@ body {
     box-shadow: 2px 2px 5px var(--main-gray);
     margin: 5rem auto;
     font-family: var(--font);
-  }
-  
-  .chat-header {
+}
+
+.chat-header {
     background-color: var(--green);
     color: #fff;
     padding: 10px;
@@ -260,36 +309,36 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     text-align: center;
-  }
-  
-  .chat-window {
+}
+
+.chat-window {
     height: 220px;
     overflow-y: scroll;
-  }
-  
-  .message-list {
+}
+
+.message-list {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .chat-input {
+}
+
+.chat-input {
     display: flex;
     align-items: center;
     padding: 10px;
     border-top: 1px solid #ccc;
     font-family: var(--font);
-  }
-  
-  .message-input {
+}
+
+.message-input {
     flex: 1;
     border: none;
     outline: none;
     padding: 5px;
     font-size: 14px;
-  }
-  
-  .send-button {
+}
+
+.send-button {
     border: none;
     outline: none;
     background-color: #333;
@@ -298,100 +347,108 @@ body {
     font-size: 14px;
     padding: 5px 10px;
     cursor: pointer;
-  }
-  
-  .send-button:hover {
+}
+
+.send-button:hover {
     background-color: var(--main-gray);
     color: var(--green);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-  }
+}
 
 
 
 
-  .bounce {
+.bounce {
     -webkit-animation-name: bounce;
     animation-name: bounce;
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-  }
-  
-  @-webkit-keyframes bounce {
+}
+
+@-webkit-keyframes bounce {
+
     from,
     20%,
     53%,
     80%,
     to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
-  
+
     40%,
     43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -30px, 0);
-      transform: translate3d(0, -30px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
     }
-  
+
     70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
     }
-  
+
     90% {
-      -webkit-transform: translate3d(0, -4px, 0);
-      transform: translate3d(0, -4px, 0);
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
     }
-  }
-  
-  @keyframes bounce {
+}
+
+@keyframes bounce {
+
     from,
     20%,
     53%,
     80%,
     to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
-  
+
     40%,
     43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -30px, 0);
-      transform: translate3d(0, -30px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
     }
-  
+
     70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -15px, 0);
-      transform: translate3d(0, -15px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
     }
-  
+
     90% {
-      -webkit-transform: translate3d(0, -4px, 0);
-      transform: translate3d(0, -4px, 0);
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
     }
-  }
-  
-  
-  
+}
+
+
+
 
 
 @media screen and (max-width: 700px) {
     .logo {
         width: 15rem;
+        /* scale: 0.2; */
     }
-    .aboutus p{
+
+    .aboutus p {
         font-size: 1rem;
+    }
+    .icons{
+        font-size: 3rem;
+        gap: 3rem;
     }
 
 }
@@ -400,6 +457,13 @@ body {
     .logo {
         width: 15rem;
     }
+
+    .rec {
+        right: 1.5rem;
+        bottom: 1rem;
+        height: 1.2rem;
+    }
+
     .aboutus {
         width: 80vw;
         font-size: 1.2rem;
@@ -408,8 +472,8 @@ body {
     .aboutus p {
         font-size: 1.2rem;
     }
-    .whatsapp{
+
+    .whatsapp {
         left: 80%;
     }
 }
-
