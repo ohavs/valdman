@@ -11,7 +11,12 @@ body {
     font-size: 62.5%;
 }
 
-
+:root{
+    --main-gray: #212121;
+    --green:#2cb742;
+    --purple:#6c63ff;
+    --font:'IBM Plex Sans Hebrew', sans-serif;
+}
 
 .logo {
     width: 30rem;
@@ -19,6 +24,7 @@ body {
     position: relative;
     left: 50%;
     /* border: 1px solid black; */
+    
     transform: translate(-50%)
 }
 
@@ -33,17 +39,17 @@ body {
 
 .nav-link:hover {
     text-decoration: underline !important;
-    color: black !important;
+    color: var(--main-gray) !important;
 }
 
 .nav-link {
-    color: #374151 !important;
+    color: var(--main-gray) !important;
     transition: 2s !important;
 }
 
 
 .about-p {
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-family: var(--font);
     text-align: center;
     font-size: 1.5rem;
 }
@@ -53,7 +59,7 @@ body {
 }
 
 .aboutus-p {
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-family:var(--font);
     text-align: center;
     font-size: 1.5rem;
     line-height: 2;
@@ -65,13 +71,13 @@ body {
 }
 
 .aboutus {
-    color: #212121;
+    color:var(--main-gray);
     width: 60vw;
     margin: auto;
 }
 
 .font {
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-family: var(--font);
     font-weight: 400;
 }
 
@@ -105,11 +111,11 @@ body {
 }
 
 .card-text {
-    background-color: #212121;
+    background-color: var(--main-gray);
     color: white;
     text-align: center;
     font-size: 2rem;
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    font-family: var(--font);
 }
 
 .card-img {
@@ -151,23 +157,14 @@ body {
 } */
 
 .whatsapp{
-    width: 5rem;
-    height: 5rem;
-    /* background-color: rgb(37, 232, 37); */
+    width: 3.5rem;
+    height: 3.5rem;
     z-index: 1000;
     position: fixed;
-    left: 85%;
-    top:80vh;
+    left: 92%;
+    top:84vh;
     scale: 0.6;
-    /* transform: translate(-50%,-50%); */
 }
-
-/* .whatsapp p{
-    text-align: center;
-    align-items: center;
-    font-size: 1rem;
-    font-family: 'IBM Plex Sans Hebrew', sans-serif;
-}  */
 
 
 
@@ -180,10 +177,38 @@ body {
 }
 
 
+.illustration{
+    width: 15rem;
+}
+
+.illustration:hover{
+    -webkit-animation: bounce infinite 1s;
+    animation: bounce infinite 1s;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    cursor: pointer;
+}
+
+.illustrations{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12rem;
+    margin: 8rem 0;
+}
+
+.principle-text{
+    font-family: var(--font);
+    color: var(--main-gray);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
 
 
 .footer {
-    background-color: #212121;
+    background-color: var(--main-gray);
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -214,13 +239,13 @@ body {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px var(--main-gray);
     margin: 5rem auto;
+    font-family: var(--font);
   }
   
   .chat-header {
-    /* background-color: #333; */
-    background-color: #2cb742;
+    background-color: var(--green);
     color: #fff;
     padding: 10px;
     font-size: 18px;
@@ -245,6 +270,7 @@ body {
     align-items: center;
     padding: 10px;
     border-top: 1px solid #ccc;
+    font-family: var(--font);
   }
   
   .message-input {
@@ -259,7 +285,7 @@ body {
     border: none;
     outline: none;
     background-color: #333;
-    background-color: #2cb742;
+    background-color: var(--green);
     color: #fff;
     font-size: 14px;
     padding: 5px 10px;
@@ -267,14 +293,89 @@ body {
   }
   
   .send-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--main-gray);
+    color: var(--green);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   }
 
 
 
 
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  
+  @-webkit-keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  @keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0);
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+  
+  
+  
 
 
 @media screen and (max-width: 700px) {

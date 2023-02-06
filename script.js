@@ -12,9 +12,10 @@ let footerContact = document.querySelector('.footer-contact')
 let chat = document.querySelector('.chat')
 let whatsappBtn = document.querySelector('.whatsapp')
 let collapse = document.querySelector('.navbar-toggler')
+let principles = document.querySelector('.principles')
 
 
-
+//  logo click 
 logo.addEventListener('click', () => {
   carouselDiv.classList.remove('hide')
   aboutSection.classList.remove('hide')
@@ -22,11 +23,12 @@ logo.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
+  principles.classList.remove('hide')
 })
 
 
 
-
+// gallery 
 galleryBtn.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
   aboutSection.classList.add('hide')
@@ -34,18 +36,11 @@ galleryBtn.addEventListener('click', () => {
   cardsDiv.classList.remove('hide')
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
-  collapse.click()
+  principles.classList.add('hide')
+  closeNav()
 })
 
-footerGallery.addEventListener('click', () => {
-  carouselDiv.classList.add('hide')
-  aboutSection.classList.add('hide')
-  aboutUs.classList.add('hide')
-  cardsDiv.classList.remove('hide')
-  chat.classList.add('hide')
-  whatsappBtn.classList.remove('hide')
-})
-
+//about us
 aboutBtn.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
   aboutSection.classList.add('hide')
@@ -53,17 +48,11 @@ aboutBtn.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
-  collapse.click()
-})
-footerAbout.addEventListener('click', () => {
-  carouselDiv.classList.add('hide')
-  aboutSection.classList.add('hide')
-  aboutUs.classList.remove('hide')
-  cardsDiv.classList.add('hide')
-  chat.classList.add('hide')
-  whatsappBtn.classList.remove('hide')
+  principles.classList.add('hide')
+  closeNav()
 })
 
+//contact
 contactBtn.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
   aboutUs.classList.add('hide')
@@ -71,8 +60,32 @@ contactBtn.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.remove('hide')
   whatsappBtn.classList.add('hide')
-  collapse.click()
+  principles.classList.add('hide')
+  closeNav()
 })
+// /////////
+//footer
+footerGallery.addEventListener('click', () => {
+  carouselDiv.classList.add('hide')
+  aboutSection.classList.add('hide')
+  aboutUs.classList.add('hide')
+  cardsDiv.classList.remove('hide')
+  chat.classList.add('hide')
+  whatsappBtn.classList.remove('hide')
+  principles.classList.add('hide')
+})
+
+
+footerAbout.addEventListener('click', () => {
+  carouselDiv.classList.add('hide')
+  aboutSection.classList.add('hide')
+  aboutUs.classList.remove('hide')
+  cardsDiv.classList.add('hide')
+  chat.classList.add('hide')
+  whatsappBtn.classList.remove('hide')
+  principles.classList.add('hide')
+})
+
 
 footerContact.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
@@ -81,47 +94,17 @@ footerContact.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.remove('hide')
   whatsappBtn.classList.add('hide')
+  principles.classList.add('hide')
 })
 
 
-
-
-
-//whatsapp//
-var isMouseDown, initX, initY, height = draggable.offsetHeight, width = draggable.offsetWidth;
-
-draggable.addEventListener('mousedown', function (e) {
-  isMouseDown = true;
-  document.body.classList.add('no-select');
-  initX = e.offsetX;
-  initY = e.offsetY;
-})
-
-document.addEventListener('mousemove', function (e) {
-  if (isMouseDown) {
-    var cx = e.clientX - initX,
-      cy = e.clientY - initY;
-    if (cx < 0) {
-      cx = 0;
-    }
-    if (cy < 0) {
-      cy = 0;
-    }
-    if (window.innerWidth - e.clientX + initX < width) {
-      cx = window.innerWidth - width;
-    }
-    if (e.clientY > window.innerHeight - height + initY) {
-      cy = window.innerHeight - height;
-    }
-    draggable.style.left = cx + 'px';
-    draggable.style.top = cy + 'px';
+function closeNav(){
+  if(window.innerWidth<990){
+    collapse.click()
   }
-})
+}
 
-draggable.addEventListener('mouseup', function () {
-  isMouseDown = false;
-  document.body.classList.remove('no-select');
-})
+
 
 
 // chat 
