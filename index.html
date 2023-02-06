@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;400;600;700&display=swap"
@@ -26,24 +28,22 @@
 
 
 <body>
-    <div id="draggable" class="no-select">
-    <a class="href" href="whatsapp://send?phone=+972506500855&text=היי חתיך"       data-action="share/whatsapp/share"  
-    target="_blank"> 
-    <i class="fa-brands fa-whatsapp whatsapp"></i></a>   
-    </div>
 
-<!-- <div class="whatsapp">
-    <p>whatsapp</p>
-</div> -->
+    <div id="draggable" class="no-select whatsapp-btn-div">
+        <a href="whatsapp://send?phone=+972506500855&text=" data-action="share/whatsapp/share" target="_blank" class="href">
+            <img class="whatsapp" src="whatsapp-svgrepo-com.svg" alt=""></a>
+    </div>
+    <!-- <i class="fa-brands fa-whatsapp whatsapp"></i> -->
 
 
     <div class="wrapper">
         <div class="content-wrapper">
-
             <nav class="navbar  fixed-top navbar-expand-lg navbar-light navbar-color">
 
                 <div class="container-fluid">
-                    <img class="navbar-brand logo  " src="img/Group 1.png" alt="">
+               
+                        <img class="navbar-brand logo" src="img/Group 1.png" alt="">
+                   
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon "></span>
@@ -99,13 +99,13 @@
             </div>
 
             <!-- cards  -->
-        
+
             <div class="cards">
                 <div class="card">
-                        <img class="card-img" src="img/carousel/2.jpg" alt="">
-                        <div>
-                            <p class="card-text">מאפרה 250 שקל</p>
-                        </div>
+                    <img class="card-img" src="img/carousel/2.jpg" alt="">
+                    <div>
+                        <p class="card-text">מאפרה 250 שקל</p>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -136,20 +136,36 @@
             </section>
 
             <section dir="rtl" class="aboutus hide">
-                <p class="aboutus-p"> 
+                <p class="aboutus-p">
                     <span>עומרי ודניאל ולדמן, נעים להכיר.</span>
                     <br>
-                    אנו משפחת ולדמן, דור שני בעסק משפחתי מומחים בעבודות בטון שונות. במהלך החמש עשרה שנים האחרונות החלטנו להתמקצע בהגשמת חלומות לעיצוב הבית מבטון. אנו עובדים מול בתי עסק בכל רחבי הארץ, בתי מלון ובעיקר בסקטור הפרטי. בשנים האחרונות, הפכנו לעסק משפחתי של ממש, כאשר אשתי דניאל נכנסה לעסק והביאה את העיצובים הייחודיים שלה ואני אחראי על הייצור.
-                    העיקרון המנחה אותנו הוא עבודה איכותית, שימוש בחומרי הגלם הטובים ביותר ומתן השירות הטוב ביותר. במשך כל שנות הפעילות, אנו רואים את הלקוחות, מבינים את הצרכים המיוחדים שלהם ומתאימים להם את סוג המוצר אותו הם מחפשים. 
-                    המוצרים שלנו משדרים איכות ויוקרה וכל מי שיראה אותם יבין זאת מהמבט הראשון. הכל נעשה בעבודת יד משולבת כלים תעשייתיים. מתאימים מאוד כמתנות יוקרתיות לאהובים לכם ולבית שלכם שמחפש את הנגיעה הנוספת.
+                    אנו משפחת ולדמן, דור שני בעסק משפחתי מומחים בעבודות בטון שונות. במהלך החמש עשרה שנים האחרונות החלטנו
+                    להתמקצע בהגשמת חלומות לעיצוב הבית מבטון. אנו עובדים מול בתי עסק בכל רחבי הארץ, בתי מלון ובעיקר
+                    בסקטור הפרטי. בשנים האחרונות, הפכנו לעסק משפחתי של ממש, כאשר אשתי דניאל נכנסה לעסק והביאה את
+                    העיצובים הייחודיים שלה ואני אחראי על הייצור.
+                    העיקרון המנחה אותנו הוא עבודה איכותית, שימוש בחומרי הגלם הטובים ביותר ומתן השירות הטוב ביותר. במשך
+                    כל שנות הפעילות, אנו רואים את הלקוחות, מבינים את הצרכים המיוחדים שלהם ומתאימים להם את סוג המוצר אותו
+                    הם מחפשים.
+                    המוצרים שלנו משדרים איכות ויוקרה וכל מי שיראה אותם יבין זאת מהמבט הראשון. הכל נעשה בעבודת יד משולבת
+                    כלים תעשייתיים. מתאימים מאוד כמתנות יוקרתיות לאהובים לכם ולבית שלכם שמחפש את הנגיעה הנוספת.
                     נשמח להכיר ולהגשים לכם חלומות, צרו קשר עוד היום.
-                    
-                    
                 </p>
-               
             </section>
 
         </div>
+
+        <div class="chat hide">
+            <div class="chat-header">!כתבו לנו בווצאפ</div>
+            <div class="chat-window">
+                <ul class="message-list"></ul>
+            </div>
+            <div class="chat-input">
+                <input type="text" class="message-input" placeholder="Type your message here">
+                <button class="send-button">שלח/י</button>
+            </div>
+        </div>
+
+
 
         <div id="footer">
             <div class="footer">
