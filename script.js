@@ -11,6 +11,7 @@ let footerAbout = document.querySelector('.footer-about')
 let footerContact = document.querySelector('.footer-contact')
 let chat = document.querySelector('.chat')
 let whatsappBtn = document.querySelector('.whatsapp')
+let collapse = document.querySelector('.navbar-toggler')
 
 
 
@@ -33,6 +34,7 @@ galleryBtn.addEventListener('click', () => {
   cardsDiv.classList.remove('hide')
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
+  collapse.click()
 })
 
 footerGallery.addEventListener('click', () => {
@@ -51,6 +53,7 @@ aboutBtn.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.add('hide')
   whatsappBtn.classList.remove('hide')
+  collapse.click()
 })
 footerAbout.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
@@ -68,6 +71,7 @@ contactBtn.addEventListener('click', () => {
   cardsDiv.classList.add('hide')
   chat.classList.remove('hide')
   whatsappBtn.classList.add('hide')
+  collapse.click()
 })
 
 footerContact.addEventListener('click', () => {
@@ -121,13 +125,10 @@ draggable.addEventListener('mouseup', function () {
 
 
 // chat 
-
-let message = document.querySelector('.href').getAttribute('href')
 let input = document.querySelector('.message-input')
 let submit = document.querySelector('.send-button')
 let clickBtn=document.querySelector(".href")
 submit.addEventListener("click", () => {
    clickBtn.href=`whatsapp://send?phone=+972506500855&text=${input.value }`
   clickBtn.click()
-  console.log(message)
 })
