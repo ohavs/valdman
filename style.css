@@ -180,7 +180,15 @@ body {
 .illustration{
     width: 15rem;
 }
-
+.discount{
+ 
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .illustration:hover{
     -webkit-animation: bounce infinite 1s;
     animation: bounce infinite 1s;
