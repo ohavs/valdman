@@ -191,27 +191,33 @@ body {
     scale: 0.6;
 }
 
-.social{
+.social {}
 
-}
-.social  h1{
+.social h1 {
     text-align: center;
     font-family: var(--font);
     color: var(--main-gray);
 }
-.icons{
+
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-     font-size: 6rem; 
-     margin: 4rem 0;
+    font-size: 6rem;
+    margin: 4rem 0;
     cursor: pointer;
 }
-a:visited{
+
+a, a:visited {
     color: var(--main-gray);
 }
+
+a:hover {
+    color: var(--purple);
+}
+
 .hide {
     display: none;
 }
@@ -245,6 +251,7 @@ a:visited{
     transform-origin: center bottom;
     cursor: pointer;
 }
+
 
 .illustrations {
     display: flex;
@@ -355,6 +362,32 @@ a:visited{
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
+.chat-text {
+    position: relative;
+    width: 20em;
+    margin: 2rem 1rem;
+    background-color: #fff;
+    padding: 1.125rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font);
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.chat-text::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 1.5em;
+    /* left: 4rem; */
+    border: .75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
 
 
 
@@ -446,7 +479,8 @@ a:visited{
     .aboutus p {
         font-size: 1rem;
     }
-    .icons{
+
+    .icons {
         font-size: 3rem;
         gap: 3rem;
     }
