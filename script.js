@@ -127,7 +127,7 @@ let input = document.querySelector('.message-input')
 let submit = document.querySelector('.send-button')
 let clickBtn=document.querySelector(".href")
 submit.addEventListener("click", () => {
-   message=`whatsapp://send?phone=+972506500855&text=${input.value }`
+   clickBtn.href=`whatsapp://send?phone=+972506500855&text=${input.value }`
   clickBtn.click()
   console.log(message)
 })
