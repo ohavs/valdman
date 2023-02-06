@@ -7,6 +7,8 @@ let aboutBtn = document.querySelector('.about-btn')
 let contactBtn = document.querySelector('.contact-btn')
 let logo = document.querySelector('.logo')
 let footerGallery = document.querySelector('.footer-gallery')
+let footerAbout = document.querySelector('.footer-about')
+let footerContact = document.querySelector('.footer-contact')
 let chat = document.querySelector('.chat')
 let whatsappBtn = document.querySelector('.whatsapp')
 
@@ -33,7 +35,24 @@ galleryBtn.addEventListener('click', () => {
   whatsappBtn.classList.remove('hide')
 })
 
+footerGallery.addEventListener('click', () => {
+  carouselDiv.classList.add('hide')
+  aboutSection.classList.add('hide')
+  aboutUs.classList.add('hide')
+  cardsDiv.classList.remove('hide')
+  chat.classList.add('hide')
+  whatsappBtn.classList.remove('hide')
+})
+
 aboutBtn.addEventListener('click', () => {
+  carouselDiv.classList.add('hide')
+  aboutSection.classList.add('hide')
+  aboutUs.classList.remove('hide')
+  cardsDiv.classList.add('hide')
+  chat.classList.add('hide')
+  whatsappBtn.classList.remove('hide')
+})
+footerAbout.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
   aboutSection.classList.add('hide')
   aboutUs.classList.remove('hide')
@@ -43,6 +62,15 @@ aboutBtn.addEventListener('click', () => {
 })
 
 contactBtn.addEventListener('click', () => {
+  carouselDiv.classList.add('hide')
+  aboutUs.classList.add('hide')
+  aboutSection.classList.add('hide')
+  cardsDiv.classList.add('hide')
+  chat.classList.remove('hide')
+  whatsappBtn.classList.add('hide')
+})
+
+footerContact.addEventListener('click', () => {
   carouselDiv.classList.add('hide')
   aboutUs.classList.add('hide')
   aboutSection.classList.add('hide')
